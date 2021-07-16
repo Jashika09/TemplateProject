@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row"  id="feedback">
+<div class="col-md-8 col-md-offset-2">
+<table class="table">
+<tr style="color:#FF0000">
+<th>nName</th>
+<th>Last name</th>
+<th>Email</th>
+<th>Feedback</th>
+</tr>
+
+
+{% for con in object_list %}
+<tr>
+<td>{{ con.name }}</td>
+<td>{{ con.lastname }}</td>
+<td>{{ con.emailid }}</td>
+<td>{{ con.feedback }}</td>
+</tr>
+
+
+{% endfor %}
+</table>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div id="data" class="col-md-12">
+	<div id="dtable" class="col-md-offset-4 col-md-4">
+<form onsubmit="f()" action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <H2><center>UPLOAD YOUR DESIGN</H2></center><br />
+<form role = "form">
+
+      <label = "name">Username</label>
+      <input type = "text" class = "form-control" id = "username" name="name" placeholder = "Enter Name"><br />
+      <label for = "name">Choose Layout Type</label>
+      
+      <select class = "form-control" name="select">
+         <option>Fashion Site</option>
+         <option>Yoga Site</option>
+         <option>Traveling Site</option>
+         <option>Sports Site</option>
+         <option>Food Site</option>
+         <option>Other</option>
+      </select><br />
+   
+   
+      <label = "inputfile">Choose File</label><br />
+      <input type = "file" id = "inputfile" name="file"><br />
+   
+      <label><input type = "checkbox" rrequired name="checkbox">Remember me</label><br /><br /><br />
+
+   
+	<center><button type = "submit" class = "btn btn-danger">Submit</button></center>
+</form>
+        </form>
+        </div>
+</div>
+<script>
+function f()
+{
+var x=document.getElementById("t1").value;
+if(x=="submit")
+{
+alert("Thanks to upload the Design");
+}
+else
+{
+alert("Please add your Design ");
+}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

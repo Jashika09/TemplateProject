@@ -1,0 +1,146 @@
+
+{% load staticfiles %}
+{% block content %}
+<html>
+<head>
+<link href="{% static 'css/bootstrap.min.css' %}" type="text/css" rel="stylesheet" />
+<link href="{% static 'css/bootstrap-theme.min.css' %}" type="text/css" rel="stylesheet" />
+<script src="{% static 'jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js '%}"></script>
+</head>
+<title>Fashion Site</title>
+
+                                 <!--- stylesheet---->
+                                 
+<style>
+#header{background-color:#FF0000; color:#FFFFFF; text-align:center;}
+#navmid{ background-color:transparent; background-image:none;}
+#body1 h1{ color:#FFFFFF; }
+#body1 h4{ color:#FFFFFF;  }
+#body1{ background-image:url('{% static 'images/photo-1496747611176-843222e1e57c.jpg' %}'); background-size:cover; height:600px;}
+#timmer{ background-color:#FFFFFF; height:350px;} 
+#gallery img{ height:300px; width:25%; float:right;}
+#gallery2 img{ height:300px; width:25%; float:right; margin-top:10px;}
+#footer{ margin-top:10px; background-image:url('{% static 'images/pexels-photo-1020315.jpeg' %}'); background-size:cover;}
+#footer h3{ color:#FFFFFF;}
+#footer h4{ color:#FFFFFF;}
+#map2{ background-color:#000000; height:400px; margin-top:20px;}
+#map2 h2{  padding-left:30px; margin-top:60px;}
+#map2 span{ padding-left:30px;}
+#follow{ background-color:#000000;}
+#fleft h4{ padding-top:20px; padding-left:50px; color:#FFFFFF; font-family:Georgia, "Times New Roman", Times, serif;}
+#fleft h5{ color:#FFFFFF; }
+#fryt{ color:#FFFFFF; padding:30px; font-family:Georgia, "Times New Roman", Times, serif;}
+#fryt button{ border-radius:20px;}
+#fryt input{ border-radius:20px; height:35px; margin-right:6px;}
+#fryt img{margin-top:10px; margin-right:10px;}
+#footer  button{ border-radius:20px; margin-right:5px;}
+.navbar-nav li a:hover {
+    color:#FF0000;
+  }
+
+</style>
+                             
+                                 <!-- body start-->
+
+<body>
+<div id="main" class="container-fluid">
+<div id="header" class="row">Hot Summer Sale-Save 50%</div>
+<div id="nav" class="row ">
+    <div id="nfirst" class="col-md-4"></div>
+    <div id="navmid" class="col-md-5">
+    <nav>
+    <ul class=" nav  navbar-nav ">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">More Demo</a></li>
+    <li><a><span class="glyphicon glyphicon-shopping-cart" style="color:#CC0066" ></span>StoreM4</a></style></li>
+    <li><a href="#">More Template</a></li>
+    <li><a href="#">Website Builder</a></li>
+    </ul>
+    </nav>
+    </div>
+    <div id="navryt" class="col-md-2"></div>
+</div>
+
+<div id="body1" class="row text-center"><h4><br><br><br><br><br><br><br><br><br><br><br><br>HTML Design Template</h4>
+<h1><b>SUMMER COLLECTION</b></h1>
+</div>
+
+<div id="timmer" class="row text-center"><br><br><h3>SUMMER SALE STARTS IN<BR></h3>
+<span style="color:#CC0033"> _____</style></span><br>
+<img src="{% static 'images/CountupTimer.gif' %}" style=" height:180px"/>
+</div>
+
+<div id="gallery" class="row">
+    
+    <img src="{% static 'images/gettyimages-482785048-2048x2048.jpg' %}" />
+    <img src="{% static 'images/gettyimages-875451824-2048x2048.jpg' %}" />
+    <img src="{% static 'images/photo-1503342217505-b0a15ec3261c.jpg' %}" />
+    <img src="{% static 'images/photo-1506152983158-b4a74a01c721.jpg' %}" />
+</div>
+
+<div id="gallery2" class="row">
+     
+     <img src="{% static 'images/photo-1545291730-faff8ca1d4b0.jpg' %}"/>
+    <img src="{% static 'images/photo-1548659326-429a592c9a72.jpg' %}"/>
+    <img src="{% static 'images/photo-1551310357-b26c1af069c6.jpg' %}"/>
+    <img src="{% static 'images/photo-1554721355-ba8d7d3f9e30.jpg' %}"/>
+</div>
+
+<div id="footer" class="row text-center"><br>
+<H3><b>PURCHASE OUR SUMMER COLLECTION</b></H3><br>
+<h4>Webdesign HTML Template</h4><br>
+<button class="btn">PURCHASE NOW</button>
+<button class="btn">MORE DISCOUNTS</button><br><br><br>
+</div>
+
+<div id="foot" class="row text-center"><br><br><h3>SUPPORTED PAYMENT SYSTEM<BR></h3>
+<span style="color:#CC0033"> _____</style></span><br>
+<img src="{% static 'images/164400_preview.png' %}" height="70px" width="70px" style="margin-right:5px"/>
+<img src="{% static 'images/4mH6nrVpRq69fBhGZZ1O_tileImage.png' %}" height="40px" width="55px" style="margin-right:5px"/>
+<img src="{% static 'images/580b57fcd9996e24bc43c51d.png' %}" height="40px" width="70px" style="margin-right:5px"/>
+<img src="{% static 'images/american-express-finance-payment-icon-search-engine-84306.png' %}" height="70px" width="70px" style="margin-right:5px"/>
+<img src="{% static 'images/pngtree-vector-bitcoin-icon-png-image_747116.jpg' %}" height="50px" width="65px" style="margin-right:5px"/>
+<img src="{% static 'images/visa-icon-0.png' %}" height="40px" width="55px" style="margin-right:5px"/>
+<img src="{% static 'images/the-world-27.jpeg' %}" height="60px" width="60px" style="margin-right:5px"/><br><br><br>
+</div>
+
+<div id="map" class="row">
+    <div id="map1" class="col-md-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.337001464693!2d74.94667794950539!3d30.198927618126437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39172d5edccff92b%3A0x2fdf96d2a7056713!2sPartap+Nagar+Park!5e0!3m2!1sen!2sin!4v1559831188876!5m2!1sen!2sin" height="400px" width="100%" style="margin-top:20px"></iframe>
+    </div>
+    <div id="map2" class="col-md-6" style="color:#FFFFFF"><h2> FIND US</h2>
+    <SPAN  style="color:#CC0033">____</SPAN><br><br>
+    <span class="glyphicon glyphicon-globe " style="color:#FFFFFF"> #33369 partap nagar,bathinda</span><br><br>
+    <span class="glyphicon glyphicon-bell" style="color:#FFFFFF"> 9877644756</span><br><br>
+    <span class="glyphicon glyphicon-envelope" style="color:#FFFFFF"> jashika134@gmail.com</span><br><br>
+    </div>
+    
+<div id="follow" class="row">
+    <div id="fleft" class="col-md-7"><h4><b>Follow</b></h4><br>
+    <img src="{% static 'images/Ems-for-Kids-Facebook.png' %}" height="30px" width="35px" style="margin-left:50px"/>
+    <img src="{% static 'images/Twitter-PNG-Image-10063.png' %}" height="30px" width="35px" style="margin-left:6px"/>
+    <img src="{% static 'images/youtube-play.png' %}" height="43px" width="44px"/>
+    <img src="{% static 'images/ig-icon-png-16.jpg' %}" height="30px" width="35px"/><br><br>
+    <h5 style="margin-left:50px"><p id="p4" style="word-spacing:135px">Authum Casual</p>
+    <p id="p1" style="word-spacing:140px">Winter Classic</p>
+    <p id="p2" style="word-spacing:140px">Spring Urban</p>
+    <p id="p3"style="word-spacing:130px">Summer Sport</p>
+    </h5>
+    </div>
+    <div id="fryt" class="col-md-5"><h4 ><b>NEW ARRIVALS DISCOUNTS CONTACT US</b></h4><BR>
+    <h5>Subscribe to get the latest on sales, new realeases and more...</h5><br>
+    <input type="text"> 
+    <button class="btn btn-danger">SUBSCRIBE</button><br><br>
+    <h5>HTML Design Templates powered by <span style="color:#FF0000">Mobirise</span><br><br>
+    <h5>Supported payment systems<br>
+    <img src="{% static 'images/visa-icon-0.png' %}" height="35px" width="40px"/>
+    <img src="{% static 'images/164400_preview.png' %}" height="55px" width="40px"/>
+    <img src="{% static 'images/4mH6nrVpRq69fBhGZZ1O_tileImage.png' %}" height="33px" width="45px"/>
+    <img src="{% static 'images/american-express-finance-payment-icon-search-engine-84306.png' %}" width="55px" height="50px"/>
+    </div>
+</div>
+</div>
+</body>
+</html>
+{% endblock %} 

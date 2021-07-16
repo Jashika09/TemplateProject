@@ -1,0 +1,102 @@
+{% load staticfiles %}
+{% block content %}
+<html>
+<head>
+<link href="{% static 'css/bootstrap.min.css' %}" type="text/css" rel="stylesheet" />
+<link href="{% static 'css/bootstrap-theme.min.css' %}" type="text/css" rel="stylesheet" />
+<script src="{% static 'jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js '%}"></script>
+</head>
+<title>5th day template</title>
+
+
+<style>
+#header{ background-color:#669900;}
+#hryt a{ color:#FFFFFF;}
+#hryt li a:hover{ color:#FF0000;}
+#body1 { background-image:url('{% static 'images/pexels-photo-373892.jpeg' %}');; height:600px; padding:150px;}
+#body1 span{ color:#FFFFFF; font-size:60px;}
+#body1 #span1{ background:rgba(0,0,0,0.6); color:#FFFFFF; font-size:16px; }
+#content{ height:100px;}
+#content h1{ background:rgba(0,0,0,0.1); padding-top:10px;}
+#foot{ background-color:#CCCCCC; margin-top:40px;}
+#footer{ margin-top:30px;}
+#content{ height:100px;}
+#fff{ background-color:#999999; margin-left:30px; height:200px; background:rgba(0,0,0,0.1);}
+#ff{ background-color:#999999; margin-left:25px; height:200px; background:rgba(0,0,0,0.1);}
+#ft{ background-color:#999999; margin-left:20px; height:200px; background:rgba(0,0,0,0.1);}
+#fr{background-color:#999999; margin-left:15px; height:200px; background:rgba(0,0,0,0.1); margin-right:30px;}
+
+
+</style>
+
+
+<body>
+<div id="main" class="container-fluid">
+<div id="header" class="row">
+    <div id="hleft" class="col-md-7"> <h3>MODUSversus</h3></div>
+    <div id="hryt" class="col-md-5"> 
+    <nav>
+    <ul class="nav navbar-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a><span class="glyphicon glyphicon-search"></span></a></li>
+    </ul>
+    </nav>
+    </div>
+</div>
+
+<div id="body1" class="row text-center">
+<span style="background:rgba(255,0,0,0.6)">WELCOME</span><br>
+<div id="span1" class="col-md-4 col-md-offset-4"><span  style="font-size:25px">Welcome To Our Site.<br>
+Here you get different templates</span></div>
+</div>
+
+<div id="content" class="row text-center">
+<h1 style="height:80px">Some of our top services
+<button class="btn btn-danger">View More</button></h1>
+</div>
+
+<div id="footer" class="row text-center">
+    <div id="ffirst" class="col-md-3">
+    <div id="fff" class="col-md-10">
+    <h1><span class="glyphicon glyphicon-hand-right"></span></h1><br>
+    <h4>Website</h4><br>
+    <button  class="btn btn-danger">read more</button></div>
+    </div>
+    
+    <div id="fsec" class="col-md-3">
+    <div id="ff" class="col-md-10">
+    <h1><span class="glyphicon glyphicon-bell"></span></h1><br>
+    <h4>Lock</h4><br>
+    <button class="btn btn-info">read more</button></div>
+    </div>
+    
+    <div id="fthird" class="col-md-3">
+    <div id="ft" class="col-md-10">
+    <h1><span class="glyphicon glyphicon-book"></span></h1><br>
+    <h4>Books</h4><br>
+    <button class="btn btn-info">read more</button></div>
+    </div>
+    
+    <div id="ffourth" class="col-md-3">
+    <div id="fr" class="col-md-10">
+    <h1><span class="glyphicon glyphicon-camera"></span></h1><br>
+    <h4>Gallery</h4><br>
+    <button class="btn btn-info">read more</button></div>
+    </div>
+</div>
+
+<div id="foot" class="row text-center"><br>
+<br>
+<h1 style="color:#FF0000"> WHY MODUS VERSUS</h1>
+<p> Welcome to our site.It will really useful to us.</p><br>
+<img src="{% static 'images/pexels-photo-264892.jpeg' %}" height="200px" width="20%"/>
+<img src="{% static 'images/pexels-photo-1098601.jpg' %}" height="240px" width="20%"/>
+<img src="{% static 'images/photo-1456735190827-d1262f71b8a3.jpg' %}" height="200px" width="20%"/>
+
+</div>
+</body>
+</html>
+{% endblock %} 

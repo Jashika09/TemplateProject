@@ -1,0 +1,221 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div id="block" class="col-md-12">
+	<div id="middle" class="col-md-12">
+    	<div id="mid" class="col-md-4 col-md-offset-4">
+        <h2><span style="color:#FFFFFF">GridShower - is the best site in showcase</span></h2>
+	    </div>	
+	</div>
+    
+<div id="section1" class="col-md-12">
+	<h1 style="text-align:center"><b>Why Grid themes</b></h1>  
+    
+<div id="divide" class="col-md-6 col-md-offset-3">
+    <div id="tfrst" class="col-md-4">
+    <img src="{% static 'images/60517.svg'%}"  height="50px" width="80px" /><br />
+	<h4>High Performance</h4>
+    </div>
+    
+    	<div id="tsec" class="col-md-4">
+    	<img src="{% static 'images/92390.svg'%}" height="50px" width="80px" /><br />
+    	<h4>Timely Update</h4>
+   		</div>
+        
+    <div id="tthird" class="col-md-4">
+    <img src="{% static 'images/17838.svg'%}"  height="50px" width="80px" /><br />
+    <h4>Add Your Ideas</h4>
+    </div>
+</div>
+
+<div id="divide2" class="col-md-6 col-md-offset-3">
+    <div id="tfrst2" class="col-md-4">
+    <img src="{% static 'images/1170646.svg'%}" height="50px" width="80px" /><br />
+	<h4>Friendly Support</h4>
+    </div>
+    
+    	<div id="tsec2" class="col-md-4">
+    	<img src="{% static 'images/181511.svg'%}" height="50px" width="80px" /><br />
+    	<h4>Contact Anytime</h4>
+    	</div>
+        
+    <div id="tthird2" class="col-md-4">
+    <img src="{% static 'images/1379454.svg'%}"  height="50px" width="80px" /><br />
+    <h4>Give Your Feedback</h4>
+    </div>
+    
+</div>
+</div>
+
+<div id="section2" class="col-md-12 text-center">
+	<center><h1>Check Out All The Pages</h1></center><br />
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')" id="bt1"> Show all</button>
+  <button class="btn" onclick="filterSelection('fashion')" id="bt1"> Fashion</button>
+  <button class="btn" onclick="filterSelection('food')" id="bt1"> Food</button>
+  <button class="btn" onclick="filterSelection('yoga')" id="bt1"> Yoga</button>
+  <button class="btn" onclick="filterSelection('aboutus')" id="bt1"> About Us</button>
+  <button class="btn" onclick="filterSelection('glyphicons')" id="bt1"> Glyphicons</button>
+  <button class="btn" onclick="filterSelection('traveling')" id="bt1"> Traveling</button>
+  <button class="btn" onclick="filterSelection('blog')" id="bt1"> Blog</button>
+</div>
+    <div class="row">
+  <div class="column fashion">
+    <div class="content">
+      <a href="fashion.html"><img src="{% static 'images/pexels-photo-1060298.jpg'%}" height="420px" width="300px" onclick="openWin()" /></a>
+        <h3><b>Fashion Site</b></h3>
+    </div>
+  </div>
+  
+  <div class="column food">
+    <div class="content">
+    <a href="food.html"><img src="{% static 'images/pexels-photo-302457.jpg'%}" height="420px" width="300px"  /></a>
+        <h3><b>Food Site</b></h3>
+    </div>
+  </div>
+  <div class="column yoga">
+    <div class="content">
+    <a href="Yoga.html"><img src="{% static 'images/pexels-photo-68468 (1).jpg'%}" height="420px" width="300px" /></a>
+        <h3><b>Yoga Site</b></h3>
+    </div>
+  </div>
+  
+  <div class="column aboutus">
+    <div class="content">
+      <a href="aboutus.html"><img src="{% static 'images/pexels-photo-57690.jpg'%}" height="420px" width="300px" /></a>
+        <h3><b>About Us Site</b></h3>
+    </div>
+  </div>
+  <div class="column glyphicons">
+    <div class="content">
+    <a href="glyphicons.html"><img src="{% static 'images/pexels-photo-3052727.jpg'%}" height="420px" width="300px"  /></a>
+        <h3><b>Glyphicons Site</b></h3>
+    </div>
+  </div>
+  <div class="column traveling">
+    <div class="content">
+    <img src="{% static 'images/pexels-photo-3038815.jpg'%}" height="420px" width="300px"  />
+        <h3><b>Traveling  Site</b></h3>
+    </div>
+  </div>
+
+  <div class="column blog">
+    <div class="content">
+      <img src="{% static 'images/pexels-photo-209151.jpg'%}" height="420px" width="300px"  />
+        <h3><b>Blog Site</b></h3>
+    </div>
+  </div>
+  <div class="column fashion">
+    <div class="content">
+    <img src="{% static 'images/pexels-photo-1060298.jpg'%}" height="420px" width="300px"  />
+        <h3><b>Fashion Site</b></h3>
+    </div>
+  </div>
+</div>
+
+<!-- END MAIN -->
+</div>
+</div>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+  
+{% endblock %}	
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
